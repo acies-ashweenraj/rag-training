@@ -108,7 +108,6 @@ if uploaded_file:
                     messages=messages,
                     max_tokens=1000
                 )
-                # Display the response
                 answer = response.choices[0].message.content
                 st.subheader("📝 AI Answer:")
                 st.write(answer)
